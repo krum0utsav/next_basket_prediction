@@ -1,0 +1,395 @@
+Gettint Train data...
+Getting orders...
+Orders loaded (3421083, 7)
+Prod-Aisle-Dept map loaded (49688, 4)
+Merging all features...
+
+Features //
+['aisle_id', 'aisle_n_orders', 'aisle_re', 'aisle_re_ratio', 'department_id', 'department_n_orders', 'department_re', 'department_re_ratio', 'order_streak', 'prod_n_orders', 'prod_re', 'prod_re_ratio', 'product_id', 'ua_avg_a2co', 'ua_n_ord_since', 'ua_n_orders', 'ua_re_ratio', 'ud_avg_a2co', 'ud_n_ord_since', 'ud_n_orders', 'ud_re_ratio', 'up_avg_a2co', 'up_n_ord_since', 'up_n_orders', 'up_re_ratio', 'user_id', 'usr_avg_basket', 'usr_avg_days', 'usr_n_items', 'usr_n_orders', 'usr_n_unique_items']
+
+Getting target...
+
+Sample //
+   user_id  product_id  up_n_orders    ...     order_streak  reordered  order_id
+0        1         196           10    ...              5.0        1.0   1187899
+1        1       10258            9    ...              5.0        1.0   1187899
+2        1       10326            1    ...             -4.0        0.0   1187899
+3        1       12427           10    ...              5.0        0.0   1187899
+4        1       13032            3    ...              1.0        1.0   1187899
+
+[5 rows x 33 columns]
+(8474661, 33)
+
+Creating Train & Validation data...
+N users: 131209, N orders: 131209
+N train orders: 118718, N val orders: 12491
+train_X(7664642, 27), train_y(7664642,), val_X(810019, 27), val_y(810019,)
+[3.0s]
+
+
+[1]	training's binary_logloss: 0.303391	valid_1's binary_logloss: 0.302439
+Training until validation scores don't improve for 10 rounds.
+[2]	training's binary_logloss: 0.292619	valid_1's binary_logloss: 0.291739
+[3]	training's binary_logloss: 0.284612	valid_1's binary_logloss: 0.283772
+[4]	training's binary_logloss: 0.27845	valid_1's binary_logloss: 0.277658
+[5]	training's binary_logloss: 0.273603	valid_1's binary_logloss: 0.272849
+[6]	training's binary_logloss: 0.269634	valid_1's binary_logloss: 0.268919
+[7]	training's binary_logloss: 0.266358	valid_1's binary_logloss: 0.265688
+[8]	training's binary_logloss: 0.263675	valid_1's binary_logloss: 0.263044
+[9]	training's binary_logloss: 0.261387	valid_1's binary_logloss: 0.260797
+[10]	training's binary_logloss: 0.259467	valid_1's binary_logloss: 0.258894
+[11]	training's binary_logloss: 0.257835	valid_1's binary_logloss: 0.257292
+[12]	training's binary_logloss: 0.256456	valid_1's binary_logloss: 0.255943
+[13]	training's binary_logloss: 0.255266	valid_1's binary_logloss: 0.254781
+[14]	training's binary_logloss: 0.254254	valid_1's binary_logloss: 0.253792
+[15]	training's binary_logloss: 0.253378	valid_1's binary_logloss: 0.252944
+[16]	training's binary_logloss: 0.25267	valid_1's binary_logloss: 0.252256
+[17]	training's binary_logloss: 0.252027	valid_1's binary_logloss: 0.251637
+[18]	training's binary_logloss: 0.251473	valid_1's binary_logloss: 0.2511
+[19]	training's binary_logloss: 0.250979	valid_1's binary_logloss: 0.250624
+[20]	training's binary_logloss: 0.250573	valid_1's binary_logloss: 0.250234
+[21]	training's binary_logloss: 0.250213	valid_1's binary_logloss: 0.249898
+[22]	training's binary_logloss: 0.249912	valid_1's binary_logloss: 0.249613
+[23]	training's binary_logloss: 0.249642	valid_1's binary_logloss: 0.249358
+[24]	training's binary_logloss: 0.249383	valid_1's binary_logloss: 0.249107
+[25]	training's binary_logloss: 0.249159	valid_1's binary_logloss: 0.248896
+[26]	training's binary_logloss: 0.24897	valid_1's binary_logloss: 0.248722
+[27]	training's binary_logloss: 0.248787	valid_1's binary_logloss: 0.248553
+[28]	training's binary_logloss: 0.248627	valid_1's binary_logloss: 0.248406
+[29]	training's binary_logloss: 0.248487	valid_1's binary_logloss: 0.248281
+[30]	training's binary_logloss: 0.248361	valid_1's binary_logloss: 0.248168
+[31]	training's binary_logloss: 0.248241	valid_1's binary_logloss: 0.248057
+[32]	training's binary_logloss: 0.248132	valid_1's binary_logloss: 0.247967
+[33]	training's binary_logloss: 0.248023	valid_1's binary_logloss: 0.247877
+[34]	training's binary_logloss: 0.247936	valid_1's binary_logloss: 0.247807
+[35]	training's binary_logloss: 0.247858	valid_1's binary_logloss: 0.247744
+[36]	training's binary_logloss: 0.247774	valid_1's binary_logloss: 0.247676
+[37]	training's binary_logloss: 0.247686	valid_1's binary_logloss: 0.247597
+[38]	training's binary_logloss: 0.247625	valid_1's binary_logloss: 0.247547
+[39]	training's binary_logloss: 0.247574	valid_1's binary_logloss: 0.247505
+[40]	training's binary_logloss: 0.247501	valid_1's binary_logloss: 0.247445
+[41]	training's binary_logloss: 0.247439	valid_1's binary_logloss: 0.247398
+[42]	training's binary_logloss: 0.247401	valid_1's binary_logloss: 0.247369
+[43]	training's binary_logloss: 0.247344	valid_1's binary_logloss: 0.247326
+[44]	training's binary_logloss: 0.247299	valid_1's binary_logloss: 0.247289
+[45]	training's binary_logloss: 0.247261	valid_1's binary_logloss: 0.247263
+[46]	training's binary_logloss: 0.247188	valid_1's binary_logloss: 0.247206
+[47]	training's binary_logloss: 0.247152	valid_1's binary_logloss: 0.24718
+[48]	training's binary_logloss: 0.247091	valid_1's binary_logloss: 0.247141
+[49]	training's binary_logloss: 0.247054	valid_1's binary_logloss: 0.247116
+[50]	training's binary_logloss: 0.247011	valid_1's binary_logloss: 0.247083
+[51]	training's binary_logloss: 0.246956	valid_1's binary_logloss: 0.247045
+[52]	training's binary_logloss: 0.246916	valid_1's binary_logloss: 0.247015
+[53]	training's binary_logloss: 0.246881	valid_1's binary_logloss: 0.246993
+[54]	training's binary_logloss: 0.246848	valid_1's binary_logloss: 0.246969
+[55]	training's binary_logloss: 0.246817	valid_1's binary_logloss: 0.246953
+[56]	training's binary_logloss: 0.246787	valid_1's binary_logloss: 0.246932
+[57]	training's binary_logloss: 0.246753	valid_1's binary_logloss: 0.246913
+[58]	training's binary_logloss: 0.246725	valid_1's binary_logloss: 0.2469
+[59]	training's binary_logloss: 0.246697	valid_1's binary_logloss: 0.246882
+[60]	training's binary_logloss: 0.246667	valid_1's binary_logloss: 0.246862
+[61]	training's binary_logloss: 0.246637	valid_1's binary_logloss: 0.246836
+[62]	training's binary_logloss: 0.246609	valid_1's binary_logloss: 0.246819
+[63]	training's binary_logloss: 0.24658	valid_1's binary_logloss: 0.246806
+[64]	training's binary_logloss: 0.24655	valid_1's binary_logloss: 0.246792
+[65]	training's binary_logloss: 0.246525	valid_1's binary_logloss: 0.246785
+[66]	training's binary_logloss: 0.246491	valid_1's binary_logloss: 0.246758
+[67]	training's binary_logloss: 0.246468	valid_1's binary_logloss: 0.246746
+[68]	training's binary_logloss: 0.246444	valid_1's binary_logloss: 0.246732
+[69]	training's binary_logloss: 0.246423	valid_1's binary_logloss: 0.246722
+[70]	training's binary_logloss: 0.246396	valid_1's binary_logloss: 0.246702
+[71]	training's binary_logloss: 0.246367	valid_1's binary_logloss: 0.246688
+[72]	training's binary_logloss: 0.246347	valid_1's binary_logloss: 0.246684
+[73]	training's binary_logloss: 0.246322	valid_1's binary_logloss: 0.24667
+[74]	training's binary_logloss: 0.246302	valid_1's binary_logloss: 0.246662
+[75]	training's binary_logloss: 0.246281	valid_1's binary_logloss: 0.246647
+[76]	training's binary_logloss: 0.246255	valid_1's binary_logloss: 0.246636
+[77]	training's binary_logloss: 0.24623	valid_1's binary_logloss: 0.246626
+[78]	training's binary_logloss: 0.24621	valid_1's binary_logloss: 0.246618
+[79]	training's binary_logloss: 0.24619	valid_1's binary_logloss: 0.246608
+[80]	training's binary_logloss: 0.246158	valid_1's binary_logloss: 0.246585
+[81]	training's binary_logloss: 0.246141	valid_1's binary_logloss: 0.246579
+[82]	training's binary_logloss: 0.246121	valid_1's binary_logloss: 0.246572
+[83]	training's binary_logloss: 0.246104	valid_1's binary_logloss: 0.246568
+[84]	training's binary_logloss: 0.246079	valid_1's binary_logloss: 0.246553
+[85]	training's binary_logloss: 0.246062	valid_1's binary_logloss: 0.246548
+[86]	training's binary_logloss: 0.246043	valid_1's binary_logloss: 0.246542
+[87]	training's binary_logloss: 0.246021	valid_1's binary_logloss: 0.246537
+[88]	training's binary_logloss: 0.246006	valid_1's binary_logloss: 0.246531
+[89]	training's binary_logloss: 0.245983	valid_1's binary_logloss: 0.246519
+[90]	training's binary_logloss: 0.245967	valid_1's binary_logloss: 0.246516
+[91]	training's binary_logloss: 0.245942	valid_1's binary_logloss: 0.246499
+[92]	training's binary_logloss: 0.245928	valid_1's binary_logloss: 0.246497
+[93]	training's binary_logloss: 0.245906	valid_1's binary_logloss: 0.246489
+[94]	training's binary_logloss: 0.245891	valid_1's binary_logloss: 0.246485
+[95]	training's binary_logloss: 0.245876	valid_1's binary_logloss: 0.246483
+[96]	training's binary_logloss: 0.245854	valid_1's binary_logloss: 0.24647
+[97]	training's binary_logloss: 0.24584	valid_1's binary_logloss: 0.246466
+[98]	training's binary_logloss: 0.245823	valid_1's binary_logloss: 0.246458
+[99]	training's binary_logloss: 0.245812	valid_1's binary_logloss: 0.24645
+[100]	training's binary_logloss: 0.245795	valid_1's binary_logloss: 0.246446
+[101]	training's binary_logloss: 0.245779	valid_1's binary_logloss: 0.246442
+[102]	training's binary_logloss: 0.24576	valid_1's binary_logloss: 0.246437
+[103]	training's binary_logloss: 0.245744	valid_1's binary_logloss: 0.246433
+[104]	training's binary_logloss: 0.245728	valid_1's binary_logloss: 0.246433
+[105]	training's binary_logloss: 0.245713	valid_1's binary_logloss: 0.246426
+[106]	training's binary_logloss: 0.2457	valid_1's binary_logloss: 0.246423
+[107]	training's binary_logloss: 0.245683	valid_1's binary_logloss: 0.246414
+[108]	training's binary_logloss: 0.245671	valid_1's binary_logloss: 0.246412
+[109]	training's binary_logloss: 0.245656	valid_1's binary_logloss: 0.246408
+[110]	training's binary_logloss: 0.245638	valid_1's binary_logloss: 0.246401
+[111]	training's binary_logloss: 0.245624	valid_1's binary_logloss: 0.246396
+[112]	training's binary_logloss: 0.245605	valid_1's binary_logloss: 0.246389
+[113]	training's binary_logloss: 0.245589	valid_1's binary_logloss: 0.246383
+[114]	training's binary_logloss: 0.245575	valid_1's binary_logloss: 0.246378
+[115]	training's binary_logloss: 0.245565	valid_1's binary_logloss: 0.246375
+[116]	training's binary_logloss: 0.245549	valid_1's binary_logloss: 0.246369
+[117]	training's binary_logloss: 0.245535	valid_1's binary_logloss: 0.246372
+[118]	training's binary_logloss: 0.245518	valid_1's binary_logloss: 0.246368
+[119]	training's binary_logloss: 0.245504	valid_1's binary_logloss: 0.246369
+[120]	training's binary_logloss: 0.24549	valid_1's binary_logloss: 0.246362
+[121]	training's binary_logloss: 0.245478	valid_1's binary_logloss: 0.246361
+[122]	training's binary_logloss: 0.24546	valid_1's binary_logloss: 0.246357
+[123]	training's binary_logloss: 0.245444	valid_1's binary_logloss: 0.246358
+[124]	training's binary_logloss: 0.245435	valid_1's binary_logloss: 0.246357
+[125]	training's binary_logloss: 0.245417	valid_1's binary_logloss: 0.24636
+[126]	training's binary_logloss: 0.245404	valid_1's binary_logloss: 0.246362
+[127]	training's binary_logloss: 0.245386	valid_1's binary_logloss: 0.246363
+[128]	training's binary_logloss: 0.245372	valid_1's binary_logloss: 0.246364
+[129]	training's binary_logloss: 0.245362	valid_1's binary_logloss: 0.246362
+[130]	training's binary_logloss: 0.245345	valid_1's binary_logloss: 0.246356
+[131]	training's binary_logloss: 0.245326	valid_1's binary_logloss: 0.246344
+[132]	training's binary_logloss: 0.245313	valid_1's binary_logloss: 0.246344
+[133]	training's binary_logloss: 0.245298	valid_1's binary_logloss: 0.246349
+[134]	training's binary_logloss: 0.245287	valid_1's binary_logloss: 0.246347
+[135]	training's binary_logloss: 0.245272	valid_1's binary_logloss: 0.246346
+[136]	training's binary_logloss: 0.245256	valid_1's binary_logloss: 0.246343
+[137]	training's binary_logloss: 0.245239	valid_1's binary_logloss: 0.246339
+[138]	training's binary_logloss: 0.245229	valid_1's binary_logloss: 0.24634
+[139]	training's binary_logloss: 0.24522	valid_1's binary_logloss: 0.24634
+[140]	training's binary_logloss: 0.245207	valid_1's binary_logloss: 0.246337
+[141]	training's binary_logloss: 0.245196	valid_1's binary_logloss: 0.246333
+[142]	training's binary_logloss: 0.245184	valid_1's binary_logloss: 0.246333
+[143]	training's binary_logloss: 0.245174	valid_1's binary_logloss: 0.246331
+[144]	training's binary_logloss: 0.245163	valid_1's binary_logloss: 0.246332
+[145]	training's binary_logloss: 0.245152	valid_1's binary_logloss: 0.246335
+[146]	training's binary_logloss: 0.245136	valid_1's binary_logloss: 0.246331
+[147]	training's binary_logloss: 0.24512	valid_1's binary_logloss: 0.246334
+[148]	training's binary_logloss: 0.245107	valid_1's binary_logloss: 0.246332
+[149]	training's binary_logloss: 0.245092	valid_1's binary_logloss: 0.246329
+[150]	training's binary_logloss: 0.245081	valid_1's binary_logloss: 0.246329
+[151]	training's binary_logloss: 0.245071	valid_1's binary_logloss: 0.246327
+[152]	training's binary_logloss: 0.245054	valid_1's binary_logloss: 0.246324
+[153]	training's binary_logloss: 0.245039	valid_1's binary_logloss: 0.246327
+[154]	training's binary_logloss: 0.245028	valid_1's binary_logloss: 0.246326
+[155]	training's binary_logloss: 0.245015	valid_1's binary_logloss: 0.246327
+[156]	training's binary_logloss: 0.245001	valid_1's binary_logloss: 0.246329
+[157]	training's binary_logloss: 0.24498	valid_1's binary_logloss: 0.246317
+[158]	training's binary_logloss: 0.244969	valid_1's binary_logloss: 0.246315
+[159]	training's binary_logloss: 0.244954	valid_1's binary_logloss: 0.246309
+[160]	training's binary_logloss: 0.244941	valid_1's binary_logloss: 0.246308
+[161]	training's binary_logloss: 0.244928	valid_1's binary_logloss: 0.24631
+[162]	training's binary_logloss: 0.244916	valid_1's binary_logloss: 0.246309
+[163]	training's binary_logloss: 0.244904	valid_1's binary_logloss: 0.246311
+[164]	training's binary_logloss: 0.244892	valid_1's binary_logloss: 0.246311
+[165]	training's binary_logloss: 0.244872	valid_1's binary_logloss: 0.246311
+[166]	training's binary_logloss: 0.244862	valid_1's binary_logloss: 0.24631
+[167]	training's binary_logloss: 0.244849	valid_1's binary_logloss: 0.24631
+[168]	training's binary_logloss: 0.244841	valid_1's binary_logloss: 0.24631
+[169]	training's binary_logloss: 0.24483	valid_1's binary_logloss: 0.246311
+[170]	training's binary_logloss: 0.24482	valid_1's binary_logloss: 0.246309
+Early stopping, best iteration is:
+[160]	training's binary_logloss: 0.244941	valid_1's binary_logloss: 0.246308
+
+Feature Importance //
+                Feature  Importance
+6    usr_n_unique_items        1295
+8        usr_avg_basket         919
+7          usr_avg_days         913
+5           usr_n_items         865
+3        up_n_ord_since         863
+11        prod_re_ratio         834
+1           up_re_ratio         651
+9         prod_n_orders         605
+10              prod_re         506
+19          ua_re_ratio         444
+14       aisle_re_ratio         421
+0           up_n_orders         410
+23          ud_re_ratio         403
+2           up_avg_a2co         397
+24          ud_avg_a2co         359
+4          usr_n_orders         352
+20          ua_avg_a2co         321
+12       aisle_n_orders         310
+21       ua_n_ord_since         271
+15  department_n_orders         237
+
+Validation //
+   order_id                        ...                                                               preds_basket
+0         1                        ...                          5707 11109 14947 22035 24852 30881 43633 44359...
+1      1119                        ...                             6046 10749 18465 27104 31683 34969 39275 47626
+2      1579                        ...                                                                25466 47209
+3      1983                        ...                          3599 3896 11824 17600 17902 21137 21903 42265 ...
+4      2029                        ...                                   6962 21137 27845 35199 38200 45840 47388
+5      2087                        ...                                                                31399 48857
+6      2191                        ...                          3962 12144 13819 18465 27344 27695 34262 37687...
+7      3068                        ...                                                                       5258
+8      3212                        ...                          651 5450 10121 12341 16589 17461 21137 22825 2...
+9      3243                        ...                                     432 6508 10017 21137 24830 24852 41793
+
+[10 rows x 3 columns]
+(12491, 3)
+
+Train //
+   order_id                        ...                                                               preds_basket
+0        36                        ...                                               5450 19660 38293 44359 44632
+1        38                        ...                                                                       8012
+2        96                        ...                                                          20574 27966 32578
+3        98                        ...                          329 1939 3339 3880 4357 5451 8518 8859 9896 13...
+4       112                        ...                          3599 4799 5646 5785 5876 13176 18070 21174 229...
+5       170                        ...                          5077 5223 6236 13176 18394 25748 25804 28092 3...
+6       218                        ...                                                            1194 5578 19505
+7       226                        ...                                                                           
+8       349                        ...                          859 5115 6258 10369 11361 11520 16349 19862 21...
+9       393                        ...                              1689 6184 12078 16797 19828 21288 30591 32403
+
+[10 rows x 3 columns]
+(118718, 3)
+
+Validation F1 //
+0/12491[0.5714285714285715]
+1000/12491[0.3557628765956589]
+2000/12491[0.35618108854097147]
+3000/12491[0.35923704536126416]
+4000/12491[0.36406366432598264]
+5000/12491[0.36770474825958976]
+6000/12491[0.36993013998142543]
+7000/12491[0.370689659007434]
+8000/12491[0.371493333767678]
+9000/12491[0.3727924052055558]
+10000/12491[0.37329159039795246]
+11000/12491[0.3727476761573695]
+12000/12491[0.37228587046611017]
+Mean F1 score: 0.3722044330338633
+
+Training F1 //
+0/118718[0.1818181818181818]
+1000/118718[0.37168301098335477]
+2000/118718[0.37055490075387376]
+3000/118718[0.37350493940234925]
+4000/118718[0.3738520430562558]
+5000/118718[0.3740111583496597]
+6000/118718[0.3764432630362492]
+7000/118718[0.37580824467642054]
+8000/118718[0.37505699565326467]
+9000/118718[0.3767338914149939]
+10000/118718[0.37736668458032446]
+11000/118718[0.37820089489040604]
+12000/118718[0.37780796240867837]
+13000/118718[0.3777658587093418]
+14000/118718[0.3777119578654212]
+15000/118718[0.37796623767915033]
+16000/118718[0.3779844110578093]
+17000/118718[0.3784032398806155]
+18000/118718[0.37895624324919747]
+19000/118718[0.37904319542795445]
+20000/118718[0.37874844916416583]
+21000/118718[0.37924305568890265]
+22000/118718[0.37992611772795937]
+23000/118718[0.3795705945959869]
+24000/118718[0.3795074360161734]
+25000/118718[0.37933885388483274]
+26000/118718[0.37934557203417363]
+27000/118718[0.3790219421773211]
+28000/118718[0.37821173409404224]
+29000/118718[0.37852394049111554]
+30000/118718[0.3784470120494679]
+31000/118718[0.3779387403140021]
+32000/118718[0.37768929333062967]
+33000/118718[0.37781477165046967]
+34000/118718[0.37778812636687015]
+35000/118718[0.3779582394923808]
+36000/118718[0.3777294048448873]
+37000/118718[0.37790622300429133]
+38000/118718[0.37752823523975737]
+39000/118718[0.3772968871114932]
+40000/118718[0.37705623653582776]
+41000/118718[0.37712392447514664]
+42000/118718[0.37701573717216436]
+43000/118718[0.3767680423284713]
+44000/118718[0.37699599547330953]
+45000/118718[0.37684057749316224]
+46000/118718[0.3767371630460354]
+47000/118718[0.37640271807295445]
+48000/118718[0.3764966057077858]
+49000/118718[0.3765134649616139]
+50000/118718[0.3763772103448652]
+51000/118718[0.37612760053194194]
+52000/118718[0.37617578364341747]
+53000/118718[0.3759472949870341]
+54000/118718[0.37597422120090174]
+55000/118718[0.37583703643371696]
+56000/118718[0.3759793280408294]
+57000/118718[0.3760671690296333]
+58000/118718[0.376046654441762]
+59000/118718[0.3758794143743209]
+60000/118718[0.37583598169059523]
+61000/118718[0.37598851311106446]
+62000/118718[0.37584652348926356]
+63000/118718[0.3760445512676082]
+64000/118718[0.37605510113768187]
+65000/118718[0.37596762608006645]
+66000/118718[0.3762348620406095]
+67000/118718[0.37598370811696197]
+68000/118718[0.37615826026049204]
+69000/118718[0.37628038424331045]
+70000/118718[0.3762640638224951]
+71000/118718[0.37649286062876175]
+72000/118718[0.3763152513964934]
+73000/118718[0.37632587259147865]
+74000/118718[0.37639609578466243]
+75000/118718[0.37622467535199045]
+76000/118718[0.3760256650029629]
+77000/118718[0.3762203851378046]
+78000/118718[0.3761339419060224]
+79000/118718[0.3761578427729359]
+80000/118718[0.3761776793960251]
+81000/118718[0.3760243311296098]
+82000/118718[0.3758318475762933]
+83000/118718[0.3758211707068077]
+84000/118718[0.37594274353305873]
+85000/118718[0.3760423496263289]
+86000/118718[0.37621364688603937]
+87000/118718[0.3761899055626889]
+88000/118718[0.37613817000205557]
+89000/118718[0.376188927773035]
+90000/118718[0.37620064297268685]
+91000/118718[0.3763137057391097]
+92000/118718[0.3764544392639016]
+93000/118718[0.37642698768890154]
+94000/118718[0.37631627442760535]
+95000/118718[0.37640605991174536]
+96000/118718[0.3766034944075048]
+97000/118718[0.3764540057119062]
+98000/118718[0.37645458196454906]
+99000/118718[0.37639131641203716]
+100000/118718[0.3763578607305133]
+101000/118718[0.3763295379494057]
+102000/118718[0.376221724047592]
+103000/118718[0.37630147472944714]
+104000/118718[0.3762317054384258]
+105000/118718[0.37626687566265277]
+106000/118718[0.3763620200807052]
+107000/118718[0.37637711479428376]
+108000/118718[0.37612442232973115]
+109000/118718[0.37616289922101637]
+110000/118718[0.37623093930472906]
+111000/118718[0.3763215109936937]
+112000/118718[0.37643529707451856]
+113000/118718[0.3763481049811382]
+114000/118718[0.3763564440732192]
+115000/118718[0.37650305878130536]
+116000/118718[0.37662132236724544]
+117000/118718[0.3767745994380378]
+118000/118718[0.3767996814543652]
+Mean F1 score: 0.37665240867856314
