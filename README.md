@@ -1,6 +1,9 @@
-Below is the full data schema ([source](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b))
+# Data Description
 
- > `orders` (3.4m rows, 206k users):
+The dataset for this exercise is a relational set of files describing customer's orders over time. The goal of is to predict which products will be in a user's next order. 
+The Instakart data on which we tested our models had between 4 and 100 orders for each user, with the sequence of products purchased in each order. They also provided the week and hour of day the order was placed, and a relative measure of time between orders. For more information, see the blog post accompanying its public release.
+
+ > `orders`:
  > * `order_id`: order identifier
  > * `user_id`: customer identifier
  > * `eval_set`: which evaluation set this order belongs in (see `SET` described below)
@@ -9,21 +12,21 @@ Below is the full data schema ([source](https://gist.github.com/jeremystan/c3b39
  > * `order_hour_of_day`: the hour of the day the order was placed on
  > * `days_since_prior`: days since the last order, capped at 30 (with NAs for `order_number` = 1)
  >
- > `products` (50k rows):
+ > `products`:
  > * `product_id`: product identifier
  > * `product_name`: name of the product
- > * `aisle_id`: foreign key
- > * `department_id`: foreign key
+ > * `parent_category1_id`: foreign key
+ > * `parent_category2_id`: foreign key
  >
- > `aisles` (134 rows):
- > * `aisle_id`: aisle identifier
- > * `aisle`: the name of the aisle
+ > `parent_category1`:
+ > * `parent_category1_id`: parent category 1 identifier
+ > * `parent_category1_desc`: the name of the parent category
  >
- > `deptartments` (21 rows):
- > * `department_id`: department identifier
- > * `department`: the name of the department
+ > `parent_category2`:
+ > * `parent_category2_id`: parent category 2 identifier
+ > * `parent_category2_desc`: the name of the category
  >
- > `order_products__SET` (30m+ rows):
+ > `order_products__SET`:
  > * `order_id`: foreign key
  > * `product_id`: foreign key
  > * `add_to_cart_order`: order in which each product was added to cart
@@ -36,7 +39,7 @@ Below is the full data schema ([source](https://gist.github.com/jeremystan/c3b39
 
 The task is to predict which products a user will reorder in their next order. The evaluation metric is the F1-score between the set of predicted products and the set of true products.
 
-# next_basket_prediction
+# EDA
 Models basked on Instakart market basket data to predict next basket for users
 
 ![sc1](pics/sc1.png)
