@@ -32,10 +32,10 @@ The Instakart data on which we tested our models had between 4 and 100 orders fo
  > * `add_to_cart_order`: order in which each product was added to cart
  > * `reordered`: 1 if this product has been ordered by this user in the past, 0 otherwise
  >
- > where `SET` is one of the four following evaluation sets (`eval_set` in `orders`):
- > * `"prior"`: orders prior to that users most recent order (~3.2m orders)
- > * `"train"`: training data supplied to participants (~131k orders)
- > * `"test"`: test data reserved for machine learning competitions (~75k orders)
+ > where `SET` is one of the three following evaluation sets (`eval_set` in `orders`):
+ > * `"prior"`: orders prior to that users most recent order
+ > * `"train"`: training data supplied to participants
+ > * `"test"`: test data reserved for machine learning competitions
 
 The task is to predict which products a user will reorder in their next order. The evaluation metric is the F1-score between the set of predicted products and the set of true products.
 
